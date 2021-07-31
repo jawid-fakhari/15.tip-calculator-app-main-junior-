@@ -1,0 +1,41 @@
+* {
+    font-family: 'Space Mono', monospace;
+}
+body {
+    background-color: hsl(185, 41%, 84%)
+}
+#header {
+    text-transform:uppercase;
+    font-weight: 700;
+    color: hsl(185, 15%, 31%);
+    letter-spacing: 5pt;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+#container {
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    padding: 5px 25px;
+    border-radius: 25px;
+}
+#input-section label {
+    color: hsl(186, 14%, 43%);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+#input-section .section {
+    margin: 20px 0;
+}
+.section #bill {
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* aggiungere l'immagine $ all'input  */
