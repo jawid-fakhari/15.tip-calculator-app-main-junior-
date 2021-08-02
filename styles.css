@@ -29,7 +29,6 @@ body {
 }
 .section #bill {
     width: 100%;
-    background-color: hsl(189, 41%, 97%);
     border: none;
     height: 35px;
     border-radius: 5px;
@@ -37,5 +36,9 @@ body {
     padding-right: 10px;
     font-weight: bold;
     font-size: 24px;
+    background: url(images/icon-dollar.svg);
+    background-position-y: center;
+    background-position-x: 10px;
+    background-repeat: no-repeat;
+    background-color: hsl(189, 41%, 97%);
 }
-/* aggiungere l'immagine $ all'input  */
