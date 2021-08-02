@@ -26,9 +26,9 @@ body {
 }
 #input-section .section {
     margin: 20px 0;
-}
+} 
 .section #bill {
-    width: 100%;
+    width: 300px;
     border: none;
     height: 35px;
     border-radius: 5px;
@@ -41,4 +41,44 @@ body {
     background-position-x: 10px;
     background-repeat: no-repeat;
     background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+.tipselection-grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 10px;
+}
+.tipselection-grid input {
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.tipselection-grid input[type=text] {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+.tipselection-grid input:active {
+    background-color: hsl(172, 67%,45%);
+    color: hsl(183, 100%, 15%);
+}
+.section #pax {
+    width: 300px;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    background: url(images/icon-person.svg);
+    background-position-y: center;
+    background-position-x: 10px;
+    background-repeat: no-repeat;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
 }

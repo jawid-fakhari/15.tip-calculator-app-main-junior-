@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="">
   <link rel="stylesheet" href="styles.css">
   <title>Tip calculator app</title>
@@ -30,24 +30,28 @@
   <div id="container">
 
     <div id="input-section">
+
       <form action="#">
         <div class="section">
           <label for="bill">Bill</label><br>
-          <input type="text" id="bill" name="bill" placeholder="0">
+          <input type="text" class="number" id="bill" name="bill" placeholder="0">
         </div>
-        <div class="section">
+
+        <div class="section tip-selection">
           <label for="Select-Tip">Select Tip %</label><br>
-          <input type="button" name="5" id="tip5" value="5%">
-          <input type="button" name="10" id="tip10" value="10%">
-          <input type="button" name="15" id="tip15" value="15%">
-          <input type="button" name="25" id="tip25" value="25%">
-          <input type="button" name="50" id="tip50" value="50%">
-          <input type="text" name="custom" id="custom" placeholder="Custom">
+          <div class="tipselection-grid">
+            <input type="button" name="5" id="tip5" value="5%">
+            <input type="button" name="10" id="tip10" value="10%">
+            <input type="button" name="15" id="tip15" value="15%">
+            <input type="button" name="25" id="tip25" value="25%">
+            <input type="button" name="50" id="tip50" value="50%">
+            <input type="text" name="custom" id="custom" placeholder="Custom">
+          </div>
         </div>
 
         <div class="section">
           <label for="pax">Number of People</label><br>
-          <input type="text" name="pax" id="pax">
+          <input type="text" name="pax" class="number" id="pax" placeholder="0">
         </div>
       </form>
     </div>
