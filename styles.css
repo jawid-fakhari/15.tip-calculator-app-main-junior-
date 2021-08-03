@@ -15,9 +15,11 @@ body {
 }
 #container {
     background-color: hsl(0, 0%, 100%);
-    box-sizing: border-box;
-    padding: 5px 25px;
     border-radius: 25px;
+    
+}
+#input-section {
+    padding: 10px 20px 0;
 }
 #input-section label {
     color: hsl(186, 14%, 43%);
@@ -57,14 +59,19 @@ body {
     border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
-}
-.tipselection-grid input[type=text] {
-    background-color: hsl(189, 41%, 97%);
-    color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
 .tipselection-grid input:active {
     background-color: hsl(172, 67%,45%);
     color: hsl(183, 100%, 15%);
+}
+.tipselection-grid input[type=text] {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    cursor: auto;
+}
+.tipselection-grid input[type=text]:active {
+    background-color: inherit;
 }
 .section #pax {
     width: 300px;
@@ -81,4 +88,49 @@ body {
     background-repeat: no-repeat;
     background-color: hsl(189, 41%, 97%);
     color: hsl(183, 100%, 15%);
+}
+#output-section {
+    background-color: hsl(183, 100%, 15%);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 5px 20px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+#content-box {
+    margin: 10px 0;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    margin: 15px 0;
+}
+.text .var {
+    color: hsl(185, 19%, 74%);
+    font-size: 12px;
+}
+.text {
+    line-height: 0.5;
+}
+.output {
+    font-size: 24px;
+    color: hsl(172, 67%,45%);
+}
+#content-box button {
+    width: 310px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%,45%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#content-box button:active {
+    background-color: hsl(185, 41%, 84%);
 }
