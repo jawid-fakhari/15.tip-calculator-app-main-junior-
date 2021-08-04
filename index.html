@@ -4,84 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="">
   <link rel="stylesheet" href="styles.css">
   <title>Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-  <div id="header">spli<br>tter</div>
-  <div id="container">
+  <div class="center-body">
+    <div id="header">spli<br>tter</div>
+    <div id="container">
 
-    <div id="input-section">
+      <div id="input-section">
 
-      <form action="#">
-        <div class="section">
-          <label for="bill">Bill</label><br>
-          <input type="text" class="number" id="bill" name="bill" placeholder="0">
-        </div>
-
-        <div class="section tip-selection">
-          <label for="Select-Tip">Select Tip %</label><br>
-          <div class="tipselection-grid">
-            <input type="button" name="5" id="tip5" value="5%">
-            <input type="button" name="10" id="tip10" value="10%">
-            <input type="button" name="15" id="tip15" value="15%">
-            <input type="button" name="25" id="tip25" value="25%">
-            <input type="button" name="50" id="tip50" value="50%">
-            <input type="text" name="custom" id="custom" placeholder="Custom">
+        <form action="#">
+          <div class="section">
+            <label for="bill">Bill</label><br>
+            <input type="text" class="number" id="bill" name="bill" placeholder="0">
           </div>
-        </div>
 
-        <div class="section">
-          <label for="pax">Number of People</label><br>
-          <input type="text" name="pax" class="number" id="pax" placeholder="0">
-        </div>
-      </form>
-    </div>
+          <div class="section tip-selection">
+            <label for="Select-Tip">Select Tip %</label><br>
+            <div class="tipselection-grid">
+              <input type="button" name="5" id="tip5" value="5%">
+              <input type="button" name="10" id="tip10" value="10%">
+              <input type="button" name="15" id="tip15" value="15%">
+              <input type="button" name="25" id="tip25" value="25%">
+              <input type="button" name="50" id="tip50" value="50%">
+              <input type="text" name="custom" id="custom" placeholder="Custom">
+            </div>
+          </div>
 
-    <div id="output-section">
-      <div id="content-box">
-        <div id="tip-amount" class="flex">
-          <div class="text">
-            <p>Tip Amount</p>
-            <p class="var">/ person</p>
+          <div class="section">
+            <label for="pax">Number of People</label><br>
+            <input type="text" name="pax" class="number" id="pax" placeholder="0">
           </div>
-          <div class="output">$34.4</div>
-        </div>
-        <div id="total" class="flex">
-          <div class="text">
-            <p>Total</p>
-            <p class="var">/ person</p>
+        </form>
+      </div>
+
+      <div id="output-section">
+        <div id="content-box">
+          <div id="tip-amount" class="flex">
+            <div class="text">
+              <p>Tip Amount</p>
+              <p class="var">/ person</p>
+            </div>
+            <div class="output">$34.4</div>
           </div>
-          <div class="output">$4.23</div>
+          <div id="total" class="flex">
+            <div class="text">
+              <p>Total</p>
+              <p class="var">/ person</p>
+            </div>
+            <div class="output">$4.23</div>
+          </div>
+          <button>Reset</button>
         </div>
-        <button>Reset</button>
       </div>
     </div>
-
 
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/jawid-fakhari/">Jawid Fakhari</a>.
   </div>
   <script src="script.js"></script>
 </body>
