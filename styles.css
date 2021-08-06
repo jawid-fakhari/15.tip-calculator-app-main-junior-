@@ -60,7 +60,7 @@ body {
     gap: 10px;
 }
 
-.tipselection-grid input {
+.tipselection-grid button, input {
     color: white;
     background-color: hsl(183, 100%, 15%);
     border: none;
