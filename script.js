@@ -4,7 +4,6 @@ const tipPerson = document.getElementById("tipPerson");
 const totalPerson = document.getElementById("totalPerson");
 const custom = document.getElementById("custom");
 
-var btnValue = 0;
 var tipPerPax = 0;
 var total = 0;
 
@@ -40,8 +39,8 @@ function inFunction(e) {
     saveBill = bill.value;
 }
 
-// calculate tip amount and total amount with focusout event applyed on number of people using saved variables 
-pax.addEventListener("focusout", myfunction);
+// calculate tip amount and total amount with keyup event applyed on number of people using saved variables 
+pax.addEventListener("keyup", myfunction);
 
 function myfunction() {
 
