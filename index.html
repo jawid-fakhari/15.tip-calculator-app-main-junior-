@@ -20,34 +20,29 @@
 
       <div id="input-section">
 
-        <form action="#">
+        
           <div class="section">
             <label for="bill">Bill</label><br>
-            <input type="text" class="number" id="bill" name="bill" placeholder="0">
+            <input type="text" class="number" id="bill" name="bill" placeholder="0" value=""> 
           </div>
 
           <div class="section tip-selection">
             <label for="Select-Tip">Select Tip %</label><br>
             <div class="tipselection-grid">
-              <button id="btn1" onclick="inFunction(this)" >5%</button>
-              <button id="btn2" onclick="inFunction(this)" >10%</button>
-              <button id="btn3" onclick="inFunction(this)" >15%</button>
-              <button id="btn4" onclick="inFunction(this)" >25%</button>
-              <button id="btn5" onclick="inFunction(this)" >50%</button>
-              <!-- <input type="button" name="5" id="tip5" class="tipButtons" value="5%">
-              <input type="button" name="10" id="tip10" class="tipButtons" value="10%">
-              <input type="button" name="15" id="tip15" class="tipButtons" value="15%">
-              <input type="button" name="25" id="tip25" class="tipButtons" value="25%">
-              <input type="button" name="50" id="tip50" class="tipButtons" value="50%"> -->
-              <input type="text" name="custom" class="number" id="custom" placeholder="Custom">
+              <button id="btn1" onclick="inFunction(this)" value="5">5%</button>
+              <button id="btn2" onclick="inFunction(this)" value="10">10%</button>
+              <button id="btn3" onclick="inFunction(this)" value="15">15%</button>
+              <button id="btn4" onclick="inFunction(this)" value="25">25%</button>
+              <button id="btn5" onclick="inFunction(this)" value="50">50%</button>
+              <input type="text" oninput="inFunction(this)" name="custom" class="number" id="custom"  placeholder="Custom" value="">
             </div>
           </div>
 
           <div class="section">
             <label for="pax">Number of People</label><br>
-            <input type="tel" name="pax" class="number" id="pax" placeholder="0">
+            <input type="tel" name="pax" class="number" id="pax" placeholder="0" value="">
           </div>
-        </form>
+        
       </div>
 
       <div id="output-section">
@@ -57,16 +52,16 @@
               <p>Tip Amount</p>
               <p class="var">/ person</p>
             </div>
-            <div class="output">$0</div>
+            <div class="output" id="tipPerson">$0</div>
           </div>
           <div id="total" class="flex">
             <div class="text">
               <p>Total</p>
               <p class="var">/ person</p>
             </div>
-            <div class="output">$0</div>
+            <div class="output" id="totalPerson">$0</div>
           </div>
-          <button>Reset</button>
+          <button id="reset" onclick="reset()">Reset</button>
         </div>
       </div>
     </div>
